@@ -34,8 +34,8 @@ function remove_dns_prefetch($urls, $relation_type) {
 }
 
 function far_ob_call($buffer) {
-	$buffer = preg_replace("fonts.gstatic.com", "google-fonts.codext.de", $buffer);
-	$buffer = preg_replace("fonts.googleapis.com", "google-fonts.codext.de", $buffer);
+	//$buffer = preg_replace("fonts.gstatic.com", "google-fonts.codext.de", $buffer);
+	//$buffer = preg_replace("fonts.googleapis.com", "google-fonts.codext.de", $buffer);
 	$buffer = str_replace("fonts.gstatic.com", "google-fonts.codext.de", $buffer);
 	$buffer = str_replace("fonts.googleapis.com", "google-fonts.codext.de", $buffer);
 	return $buffer;
